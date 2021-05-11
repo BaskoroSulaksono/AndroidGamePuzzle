@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15e3ad1b3a96ff04790427f92539dd28, type: 3}
+  m_Name: Lembar Pertama
+  m_EditorClassIdentifier: 
+  name: Lembar CV
+  description: "Vishera FX-6300 3.5 Ghz Cache 3x2MB (BOX)\t1.380.000 Asus M5A97 R2.0
+    (AMD 970, DDR3, 2xPCI-Exp 16x, USB3, Sata3)\t1.480.000 Corsair DDR3 Vengeance
+    Blue PC12800 8GB (2X4GB) - CMZ8GX3M2A1600C9B\t915.000\t Zotac Geforce GTX 750
+    Ti 2 GB 128 Bit DDR5\t1.440.000"
+  image: {fileID: 21300000, guid: cb5c44425a94dfb45824f46a273f96b6, type: 3}
