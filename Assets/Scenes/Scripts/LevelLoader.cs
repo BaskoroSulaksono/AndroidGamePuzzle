@@ -16,29 +16,21 @@ public class LevelLoader : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
-        
-        
-
-
     }
 
-    
+    //load home menu
     public void LoadHome()
     {
         SceneManager.LoadScene(0);
     }
 
-    public void LoadLevelSelect()
-    {
-        SceneManager.LoadScene(1);
-    }
-
+    //load level by inputing buildIndex
     public void LoadLevel(int buildIndex)
     {
         SceneManager.LoadScene(buildIndex);
     }
 
-    //jalankan jika sudah masuk lvl 1
+    //load level by increasing buildindex
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

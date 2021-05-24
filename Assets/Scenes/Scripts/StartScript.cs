@@ -11,7 +11,7 @@ public class StartScript : MonoBehaviour
     void Start()
     {
         scene = SceneManager.GetActiveScene().buildIndex;
-        Debug.Log(scene);
+        
     }
 
     // Update is called once per frame
@@ -19,7 +19,6 @@ public class StartScript : MonoBehaviour
     {
         if (GameFinish.isGameFinished)
         {
-            Debug.Log("isgamefinished di startscript");
             if (scene != SceneManager.GetActiveScene().buildIndex)
             {
                 FinishScreen.GetComponent<FinishScreen>().RepeatLevel();

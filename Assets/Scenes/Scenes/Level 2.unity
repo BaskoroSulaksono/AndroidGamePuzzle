@@ -4456,6 +4456,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookOfKnowledge
       objectReference: {fileID: 0}
+    - target: {fileID: 7173819883856164407, guid: 7038ae553c9f792469cc88dc21a85fa0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7173819883856164411, guid: 7038ae553c9f792469cc88dc21a85fa0,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4560,6 +4565,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370134564092913060, guid: 7038ae553c9f792469cc88dc21a85fa0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370134564092913060, guid: 7038ae553c9f792469cc88dc21a85fa0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370134564092913060, guid: 7038ae553c9f792469cc88dc21a85fa0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.000001847744
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7038ae553c9f792469cc88dc21a85fa0, type: 3}

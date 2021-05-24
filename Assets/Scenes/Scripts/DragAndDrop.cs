@@ -16,16 +16,18 @@ public class DragAndDrop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //CobaTouchControl();
+        // first touch detected
         if (Input.touchCount > 0)
         {
 
             Touch touch = Input.GetTouch(0);
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+            // shoot raycast to touch
             RaycastHit2D hit = Physics2D.Raycast(touchPosition, Vector2.zero);
 
             if (hit.collider != null && hit.transform.CompareTag("Puzzle"))
             {
+                // initial touch for storing puzzle piece info
                 if (touch.phase == TouchPhase.Began)
                 {
                     if (!hit.transform.GetComponent<PieceScript>().inOriginPosition)
@@ -33,24 +35,20 @@ public class DragAndDrop : MonoBehaviour
                         selectedPiece = hit.transform.gameObject;
                         selectedPiece.GetComponent<PieceScript>().selected = true;
                         selectedPiece.GetComponent<SortingGroup>().sortingOrder = orderInLayer;
-                        //orderInLayer++;
-
                     }
-                    
-
                 }
-
             }
+
+            // touch moved or stationary still hold the pieces
             if (touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)
             {
                 if (selectedPiece != null)
                 {
-                    //Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
                     selectedPiece.transform.position = new Vector3(touchPosition.x, touchPosition.y, 0f);
                 }
-
-
             }
+
+            // touch exit after began or after moved
             if (touch.phase == TouchPhase.Ended)
             {
                 if (selectedPiece != null)
@@ -67,7 +65,7 @@ public class DragAndDrop : MonoBehaviour
     }
 
     //test script
-    void CobaTouchControl()
+    /*void CobaTouchControl()
     {
         if (Input.touchCount > 0)
         {
@@ -90,6 +88,6 @@ public class DragAndDrop : MonoBehaviour
                 Debug.Log("Bergerak");
             }
         }
-    }
+    }*/
 }
 
