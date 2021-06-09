@@ -16,30 +16,24 @@ public class DragAndDrop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //CobaTouchControl();
+        CobaTouchControl();
         if (Input.touchCount > 0)
         {
-
             Touch touch = Input.GetTouch(0);
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
             RaycastHit2D hit = Physics2D.Raycast(touchPosition, Vector2.zero);
-
             if (hit.collider != null && hit.transform.CompareTag("Puzzle"))
             {
                 if (touch.phase == TouchPhase.Began)
-                {
+                {                     
                     if (!hit.transform.GetComponent<PieceScript>().inOriginPosition)
                     {
                         selectedPiece = hit.transform.gameObject;
                         selectedPiece.GetComponent<PieceScript>().selected = true;
                         selectedPiece.GetComponent<SortingGroup>().sortingOrder = orderInLayer;
                         //orderInLayer++;
-
                     }
-                    
-
                 }
-
             }
             if (touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)
             {
