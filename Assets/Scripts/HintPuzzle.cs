@@ -18,11 +18,6 @@ public class HintPuzzle : MonoBehaviour
         //pieceLenght = pieces.Length;
 
     }
-    private void Update()
-    {
-        
-
-    }
 //script untuk button hint
 //temukan gameobject dengan tag puzzle
 //pilih salah satu dari tag puzzle

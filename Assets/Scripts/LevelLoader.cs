@@ -16,6 +16,7 @@ public class LevelLoader : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     //load home menu
@@ -34,6 +35,14 @@ public class LevelLoader : MonoBehaviour
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+
+    //test script
+    //load level 1 for swipe menu test
+    public void LoadLevelOne()
+    {
+        SceneManager.LoadScene(2);
     }
 
 

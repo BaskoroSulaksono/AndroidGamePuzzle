@@ -7,7 +7,6 @@ public class PieceScript : MonoBehaviour
     public Vector3 puzzleOriginPosition;
     public bool inOriginPosition = false;
     public bool selected = false;
-    public GameObject controller;
     
     // Start is called before the first frame update
     void Start()
@@ -56,7 +55,7 @@ public class PieceScript : MonoBehaviour
     }
 
     //fungsi sementara nanti diubah
-    //mengubah seluruh elemen  pada piece jika tidak lewat menyusun puzzle
+    //mengubah seluruh elemen  pada piece jika tidak lewat menyusun puzzle (hint)
     public void ChangeVarFromEx()
     {
         inOriginPosition = true;
