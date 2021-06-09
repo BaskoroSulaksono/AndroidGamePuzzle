@@ -4443,7 +4443,6 @@ GameObject:
   - component: {fileID: 1674358914}
   - component: {fileID: 1674358913}
   - component: {fileID: 1674358916}
-  - component: {fileID: 1674358917}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4552,19 +4551,6 @@ MonoBehaviour:
   controller: {fileID: 1951227607}
   finishScreenUI: {fileID: 148941495}
   gameIsPaused: 0
---- !u!114 &1674358917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674358911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a4ab53e3e3cb843b90f3cedf795417, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pieceParent: {fileID: 209351952}
 --- !u!1 &1675994233
 GameObject:
   m_ObjectHideFlags: 0
@@ -5843,6 +5829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecesParent: {fileID: 209351952}
+  childForCounter: 0
 --- !u!114 &1951227610
 MonoBehaviour:
   m_ObjectHideFlags: 0

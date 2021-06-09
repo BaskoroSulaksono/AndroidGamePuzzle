@@ -8,12 +8,14 @@ public class GameFinish : MonoBehaviour
     public static int counter = 0;
     public GameObject piecesParent;
     public static bool isGameFinished = false;
+    public int childForCounter;
     // Start is called before the first frame update
     void Start()
     {
         //GetNumOfChild();
         ResetCounter();
         isGameFinished = false;
+        childForCounter=GetNumOfChild();
     }
 
 
@@ -34,7 +36,7 @@ public class GameFinish : MonoBehaviour
         if(counter == GetNumOfChild())
         {
             isGameFinished = true;
-            //Debug.Log("GameFinished");
+            Debug.Log("GameFinished");
             //pop up
         }
     }
