@@ -10,6 +10,10 @@ public class ChangeDifficult : MonoBehaviour
     private string nextScene;
     public Text btnDifficult;
     //TEST SCRIPT
+    private void Start()
+    {
+        UpdateUI();
+    }
     public void ChangeDiff()
     {
         // checking current scene
