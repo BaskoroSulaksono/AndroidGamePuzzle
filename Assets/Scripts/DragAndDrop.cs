@@ -22,7 +22,7 @@ public class DragAndDrop : MonoBehaviour
 
             Touch touch = Input.GetTouch(0);
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-            // shoot raycast to touch
+            // shot raycast to touch
             RaycastHit2D hit = Physics2D.Raycast(touchPosition, Vector2.zero);
 
             if (hit.collider != null && hit.transform.CompareTag("Puzzle"))

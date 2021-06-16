@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class BGMController : MonoBehaviour
 {
-
+    static BGMController instance = null;
     private AudioSource _audioSource;
-    private void Awake()
+    void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
-        _audioSource = GetComponent<AudioSource>();
+        if (instance != null)
+            Destroy(gameObject);
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(transform.gameObject);
+            _audioSource = GetComponent<AudioSource>();
+        }
     }
+    
+       
+
     public void PlayMusic()
     {
         if (_audioSource.isPlaying) return;

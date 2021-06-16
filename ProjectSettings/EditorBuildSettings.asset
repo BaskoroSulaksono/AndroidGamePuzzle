@@ -6,21 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Scenes/Home.unity
+    path: Assets/Scenes/Home.unity
     guid: 4fa47afb244e65049a70f8e967b2a034
   - enabled: 1
-    path: Assets/Scenes/Scenes/Settings.unity
+    path: Assets/Scenes/Settings.unity
     guid: ff03812477ecac04a9ab2d54a5cdb208
   - enabled: 0
-    path: Assets/Scenes/Scenes/Gallery.unity
+    path: Assets/Scenes/Gallery.unity
     guid: c957205bfe2e47f4eb17b708bceea8fb
   - enabled: 1
-    path: Assets/Scenes/Scenes/SwipeLevel.unity
+    path: Assets/Scenes/SwipeLevel.unity
     guid: cf71cd638965d49449dd0e4c55a0c3d3
   - enabled: 1
-    path: Assets/Scenes/Scenes/Universal.unity
+    path: Assets/Scenes/Universal.unity
     guid: 450b1897ddb13654785d7970715dfddc
   - enabled: 1
-    path: Assets/Scenes/Scenes/Level 2.unity
+    path: Assets/Scenes/Level 2.unity
     guid: 337b7cbea0025034b8f6d9f0a40a688f
+  - enabled: 1
+    path: Assets/Scenes/Percobaan.unity
+    guid: c76ebd2f891f23e4082a9f3f02da86b9
   m_configObjects: {}
