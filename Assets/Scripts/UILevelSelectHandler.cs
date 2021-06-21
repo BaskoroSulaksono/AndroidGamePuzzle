@@ -6,10 +6,12 @@ public class UILevelSelectHandler : MonoBehaviour
 {
     public Button[] Button;
     public SaveLoad saveLoad;
-    
+    bool[] levelStatus;
+
     // Start is called before the first frame update
     void Start()
     {
+        levelStatus = saveLoad.levelStatus;
         CheckUnlockedLevel();
     }
 
@@ -21,8 +23,7 @@ public class UILevelSelectHandler : MonoBehaviour
 
     void CheckUnlockedLevel()
     {
-        bool[] levelStatus = saveLoad.levelStatus;
-        for (int i = 0; i < Button.Length; i++)
+        for (int i = 0; i < levelStatus.Length; i++)
         {
             
             if (levelStatus[i] == false)
