@@ -12,19 +12,6 @@ public class SaveLoad : MonoBehaviour
     
     private void Awake()
     {
-        // TEST PURPOSE BASIC SAVE AND LOAD JSON
-        //SaveObject saveObject = new SaveObject {
-        //    levelStatusObj = levelStatus,
-        //};
-        
-
-        //SaveObject loadedSaveObj = JsonUtility.FromJson<SaveObject>(json);
-        //for (int i = 0; i < levelStatus.Length; i++)
-        //{
-        //    levelStatus[i] = loadedSaveObj.levelStatusObj[i];
-        //    Debug.Log(loadedSaveObj.levelStatusObj[i]);
-        //    
-        //}
         
         
     }
@@ -38,15 +25,7 @@ public class SaveLoad : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // TEST PURPOSE SAVE LOAD USING KEYS
-        // if (Input.GetKeyDown(KeyCode.S))
-        // {
-        //     Save();
-        // }
-        // if (Input.GetKeyDown(KeyCode.L))
-        // {
-        //     
-        // }
+        
     }
     
 
