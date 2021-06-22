@@ -8,7 +8,7 @@ public class SwipeMenu : MonoBehaviour
     public GameObject scrollbar;
     float scrollPos = 0;
     float[] pos;
-
+    
     // Start is called before the first frame update
     void Start()
     {
